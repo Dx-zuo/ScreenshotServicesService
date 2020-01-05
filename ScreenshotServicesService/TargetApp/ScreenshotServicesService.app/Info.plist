@@ -10,12 +10,8 @@
 	<string>Screenshots</string>
 	<key>CFBundleExecutable</key>
 	<string>ScreenshotServicesService</string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>ScreenshotServicesService/icon.png</string>
-	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.repaly.jietu.dx.ScreenshotServicesService</string>
+	<string>com.apple.ScreenshotServicesService</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

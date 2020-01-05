@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		359AA014907B6BDB65C4E413 /* Pods_ScreenshotServicesServiceDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6E497593D171E49EEC7590 /* Pods_ScreenshotServicesServiceDylib.framework */; };
 		EB6DDCB323C1F5E7001FE51D /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB6DDCB223C1F5E7001FE51D /* MDConfig.plist */; };
 		EB6DDCBD23C1F5E7001FE51D /* libScreenshotServicesServiceDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = EB6DDCBC23C1F5E7001FE51D /* libScreenshotServicesServiceDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		EB6DDCC223C1F5E7001FE51D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6DDCC123C1F5E7001FE51D /* JavaScriptCore.framework */; };
@@ -37,6 +38,9 @@
 		EB6DDCFF23C1F5E7001FE51D /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDCFE23C1F5E7001FE51D /* fishhook.h */; };
 		EB6DDD0123C1F5E7001FE51D /* ScreenshotServicesServiceDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDD0023C1F5E7001FE51D /* ScreenshotServicesServiceDylib.h */; };
 		EB6DDD0323C1F5E7001FE51D /* ScreenshotServicesServiceDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDD0223C1F5E7001FE51D /* ScreenshotServicesServiceDylib.m */; };
+		EB6DDD0D23C2154A001FE51D /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB6DDD0C23C2154A001FE51D /* Entitlements.plist */; };
+		EB6DDD0F23C2154E001FE51D /* osSignpostPPTWhitelist.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB6DDD0E23C2154E001FE51D /* osSignpostPPTWhitelist.plist */; };
+		EB6DDD1223C2183B001FE51D /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDD1123C2183B001FE51D /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		15B68D44E9244E0C721696C5 /* Pods-ScreenshotServicesServiceDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenshotServicesServiceDylib.release.xcconfig"; path = "Target Support Files/Pods-ScreenshotServicesServiceDylib/Pods-ScreenshotServicesServiceDylib.release.xcconfig"; sourceTree = "<group>"; };
+		6F6E497593D171E49EEC7590 /* Pods_ScreenshotServicesServiceDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenshotServicesServiceDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB28CFFDFBD2FDF9055931AF /* Pods-ScreenshotServicesServiceDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenshotServicesServiceDylib.debug.xcconfig"; path = "Target Support Files/Pods-ScreenshotServicesServiceDylib/Pods-ScreenshotServicesServiceDylib.debug.xcconfig"; sourceTree = "<group>"; };
 		EB6DDCAB23C1F5E7001FE51D /* ScreenshotServicesService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenshotServicesService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6DDCAE23C1F5E7001FE51D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		EB6DDCB023C1F5E7001FE51D /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
@@ -101,6 +108,10 @@
 		EB6DDCFE23C1F5E7001FE51D /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		EB6DDD0023C1F5E7001FE51D /* ScreenshotServicesServiceDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotServicesServiceDylib.h; sourceTree = "<group>"; };
 		EB6DDD0223C1F5E7001FE51D /* ScreenshotServicesServiceDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenshotServicesServiceDylib.m; sourceTree = "<group>"; };
+		EB6DDD0C23C2154A001FE51D /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Entitlements.plist; sourceTree = "<group>"; };
+		EB6DDD0E23C2154E001FE51D /* osSignpostPPTWhitelist.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = osSignpostPPTWhitelist.plist; sourceTree = "<group>"; };
+		EB6DDD1023C2183B001FE51D /* ScreenshotServicesServiceDylib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScreenshotServicesServiceDylib-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB6DDD1123C2183B001FE51D /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,12 +129,22 @@
 				EB6DDCC223C1F5E7001FE51D /* JavaScriptCore.framework in Frameworks */,
 				EB6DDCC623C1F5E7001FE51D /* UIKit.framework in Frameworks */,
 				EB6DDCC423C1F5E7001FE51D /* Foundation.framework in Frameworks */,
+				359AA014907B6BDB65C4E413 /* Pods_ScreenshotServicesServiceDylib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147869154D7BA4A3FF305FD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB28CFFDFBD2FDF9055931AF /* Pods-ScreenshotServicesServiceDylib.debug.xcconfig */,
+				15B68D44E9244E0C721696C5 /* Pods-ScreenshotServicesServiceDylib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EB6DDC9F23C1F5E7001FE51D = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +152,7 @@
 				EB6DDCC723C1F5E7001FE51D /* ScreenshotServicesServiceDylib */,
 				EB6DDCC023C1F5E7001FE51D /* Frameworks */,
 				EB6DDCAC23C1F5E7001FE51D /* Products */,
+				147869154D7BA4A3FF305FD2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +170,8 @@
 			children = (
 				EB6DDCAE23C1F5E7001FE51D /* icon.png */,
 				EB6DDCB623C1F5E7001FE51D /* Info.plist */,
+				EB6DDD0E23C2154E001FE51D /* osSignpostPPTWhitelist.plist */,
+				EB6DDD0C23C2154A001FE51D /* Entitlements.plist */,
 				EB6DDCAF23C1F5E7001FE51D /* Scripts */,
 				EB6DDCB123C1F5E7001FE51D /* Config */,
 				EB6DDCB423C1F5E7001FE51D /* TargetApp */,
@@ -185,6 +209,7 @@
 				EB6DDCC123C1F5E7001FE51D /* JavaScriptCore.framework */,
 				EB6DDCC323C1F5E7001FE51D /* Foundation.framework */,
 				EB6DDCC523C1F5E7001FE51D /* UIKit.framework */,
+				6F6E497593D171E49EEC7590 /* Pods_ScreenshotServicesServiceDylib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,6 +226,8 @@
 				EB6DDCF823C1F5E7001FE51D /* AntiAntiDebug */,
 				EB6DDCFB23C1F5E7001FE51D /* fishhook */,
 				EB6DDCF623C1F5E7001FE51D /* Supporting Files */,
+				EB6DDD1123C2183B001FE51D /* test.swift */,
+				EB6DDD1023C2183B001FE51D /* ScreenshotServicesServiceDylib-Bridging-Header.h */,
 			);
 			path = ScreenshotServicesServiceDylib;
 			sourceTree = "<group>";
@@ -326,6 +353,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB6DDD0623C1F5E7001FE51D /* Build configuration list for PBXNativeTarget "ScreenshotServicesServiceDylib" */;
 			buildPhases = (
+				68236B59214D48F76253BE48 /* [CP] Check Pods Manifest.lock */,
 				EB6DDCB723C1F5E7001FE51D /* ShellScript */,
 				EB6DDCB823C1F5E7001FE51D /* Sources */,
 				EB6DDCB923C1F5E7001FE51D /* Frameworks */,
@@ -354,6 +382,7 @@
 					};
 					EB6DDCBB23C1F5E7001FE51D = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -381,6 +410,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6DDD0F23C2154E001FE51D /* osSignpostPPTWhitelist.plist in Resources */,
+				EB6DDD0D23C2154A001FE51D /* Entitlements.plist in Resources */,
 				EB6DDCB323C1F5E7001FE51D /* MDConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +419,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		68236B59214D48F76253BE48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenshotServicesServiceDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EB6DDCA623C1F5E7001FE51D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -466,6 +519,7 @@
 				EB6DDCDF23C1F5E7001FE51D /* a1a2-selectortramps-i386.s in Sources */,
 				EB6DDCE523C1F5E7001FE51D /* a2a3-selectortramps-i386.s in Sources */,
 				EB6DDCE323C1F5E7001FE51D /* a2a3-selectortramps-arm.s in Sources */,
+				EB6DDD1223C2183B001FE51D /* test.swift in Sources */,
 				EB6DDCCB23C1F5E7001FE51D /* ScreenshotServicesServiceDylib.mm in Sources */,
 				EB6DDCF523C1F5E7001FE51D /* LLDBTools.mm in Sources */,
 				EB6DDCE723C1F5E7001FE51D /* a2a3-selectortramps-x86_64.s in Sources */,
@@ -596,7 +650,9 @@
 		};
 		EB6DDD0723C1F5E7001FE51D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB28CFFDFBD2FDF9055931AF /* Pods-ScreenshotServicesServiceDylib.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6A4C3VV9ST;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -650,6 +706,9 @@
 					RevealServer,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenshotServicesServiceDylib/ScreenshotServicesServiceDylib-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
 			};
@@ -657,7 +716,9 @@
 		};
 		EB6DDD0823C1F5E7001FE51D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B68D44E9244E0C721696C5 /* Pods-ScreenshotServicesServiceDylib.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 6A4C3VV9ST;
@@ -708,6 +769,8 @@
 					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenshotServicesServiceDylib/ScreenshotServicesServiceDylib-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -715,8 +778,9 @@
 		EB6DDD0A23C1F5E7001FE51D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6A4C3VV9ST;
+				DEVELOPMENT_TEAM = P9Y7W86459;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ScreenshotServicesService/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
@@ -736,8 +800,9 @@
 		EB6DDD0B23C1F5E7001FE51D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6A4C3VV9ST;
+				DEVELOPMENT_TEAM = P9Y7W86459;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ScreenshotServicesService/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;

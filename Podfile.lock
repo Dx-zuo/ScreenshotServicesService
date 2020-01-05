@@ -1,0 +1,28 @@
+PODS:
+  - BSBacktraceLogger (0.0.1)
+  - DoraemonKit/Core (2.0.0):
+    - BSBacktraceLogger
+    - fishhook
+  - fishhook (0.2)
+  - Reveal-SDK (24)
+
+DEPENDENCIES:
+  - DoraemonKit/Core (~> 2.0.0)
+  - Reveal-SDK (~> 24)
+
+SPEC REPOS:
+  trunk:
+    - BSBacktraceLogger
+    - DoraemonKit
+    - fishhook
+    - Reveal-SDK
+
+SPEC CHECKSUMS:
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
+  DoraemonKit: 9e923599e28d0b61f1c6de4aef2c2d669b30abb7
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  Reveal-SDK: 5d7e56b8f018c0a88b3a2c10bf68d598bbd3b071
+
+PODFILE CHECKSUM: ff1642c578bd3a8fe05b041992d2a64e566ffb84
+
+COCOAPODS: 1.9.0.beta.2
