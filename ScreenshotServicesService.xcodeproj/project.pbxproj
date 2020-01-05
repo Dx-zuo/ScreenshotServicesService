@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB6DDCB323C1F5E7001FE51D /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB6DDCB223C1F5E7001FE51D /* MDConfig.plist */; };
+		EB6DDCBD23C1F5E7001FE51D /* libScreenshotServicesServiceDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = EB6DDCBC23C1F5E7001FE51D /* libScreenshotServicesServiceDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		EB6DDCC223C1F5E7001FE51D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6DDCC123C1F5E7001FE51D /* JavaScriptCore.framework */; };
+		EB6DDCC423C1F5E7001FE51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6DDCC323C1F5E7001FE51D /* Foundation.framework */; };
+		EB6DDCC623C1F5E7001FE51D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6DDCC523C1F5E7001FE51D /* UIKit.framework */; };
+		EB6DDCCB23C1F5E7001FE51D /* ScreenshotServicesServiceDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCCA23C1F5E7001FE51D /* ScreenshotServicesServiceDylib.mm */; };
+		EB6DDCCE23C1F5E7001FE51D /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDCCD23C1F5E7001FE51D /* MDConfigManager.h */; };
+		EB6DDCD023C1F5E7001FE51D /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCCF23C1F5E7001FE51D /* MDConfigManager.m */; };
+		EB6DDCD223C1F5E7001FE51D /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDCD123C1F5E7001FE51D /* MDCycriptManager.h */; };
+		EB6DDCD423C1F5E7001FE51D /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCD323C1F5E7001FE51D /* MDCycriptManager.m */; };
+		EB6DDCD623C1F5E7001FE51D /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDCD523C1F5E7001FE51D /* MDMethodTrace.h */; };
+		EB6DDCD823C1F5E7001FE51D /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCD723C1F5E7001FE51D /* MDMethodTrace.m */; };
+		EB6DDCDB23C1F5E7001FE51D /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCDA23C1F5E7001FE51D /* a1a2-selectortramps-arm.s */; };
+		EB6DDCDD23C1F5E7001FE51D /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCDC23C1F5E7001FE51D /* a1a2-selectortramps-arm64.s */; };
+		EB6DDCDF23C1F5E7001FE51D /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCDE23C1F5E7001FE51D /* a1a2-selectortramps-i386.s */; };
+		EB6DDCE123C1F5E7001FE51D /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCE023C1F5E7001FE51D /* a1a2-selectortramps-x86_64.s */; };
+		EB6DDCE323C1F5E7001FE51D /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCE223C1F5E7001FE51D /* a2a3-selectortramps-arm.s */; };
+		EB6DDCE523C1F5E7001FE51D /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCE423C1F5E7001FE51D /* a2a3-selectortramps-i386.s */; };
+		EB6DDCE723C1F5E7001FE51D /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCE623C1F5E7001FE51D /* a2a3-selectortramps-x86_64.s */; };
+		EB6DDCE923C1F5E7001FE51D /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDCE823C1F5E7001FE51D /* OCMethodTrace.h */; };
+		EB6DDCEB23C1F5E7001FE51D /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCEA23C1F5E7001FE51D /* OCMethodTrace.m */; };
+		EB6DDCED23C1F5E7001FE51D /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDCEC23C1F5E7001FE51D /* OCSelectorTrampolines.h */; };
+		EB6DDCEF23C1F5E7001FE51D /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCEE23C1F5E7001FE51D /* OCSelectorTrampolines.mm */; };
+		EB6DDCF323C1F5E7001FE51D /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDCF223C1F5E7001FE51D /* LLDBTools.h */; };
+		EB6DDCF523C1F5E7001FE51D /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCF423C1F5E7001FE51D /* LLDBTools.mm */; };
+		EB6DDCFA23C1F5E7001FE51D /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCF923C1F5E7001FE51D /* AntiAntiDebug.m */; };
+		EB6DDCFD23C1F5E7001FE51D /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDCFC23C1F5E7001FE51D /* fishhook.c */; };
+		EB6DDCFF23C1F5E7001FE51D /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDCFE23C1F5E7001FE51D /* fishhook.h */; };
+		EB6DDD0123C1F5E7001FE51D /* ScreenshotServicesServiceDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6DDD0023C1F5E7001FE51D /* ScreenshotServicesServiceDylib.h */; };
+		EB6DDD0323C1F5E7001FE51D /* ScreenshotServicesServiceDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDD0223C1F5E7001FE51D /* ScreenshotServicesServiceDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB6DDCBE23C1F5E7001FE51D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB6DDCA023C1F5E7001FE51D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB6DDCBB23C1F5E7001FE51D;
+			remoteInfo = ScreenshotServicesServiceDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB6DDCA823C1F5E7001FE51D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB6DDCBD23C1F5E7001FE51D /* libScreenshotServicesServiceDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB6DDCAB23C1F5E7001FE51D /* ScreenshotServicesService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenshotServicesService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6DDCAE23C1F5E7001FE51D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		EB6DDCB023C1F5E7001FE51D /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		EB6DDCB223C1F5E7001FE51D /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		EB6DDCB523C1F5E7001FE51D /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		EB6DDCB623C1F5E7001FE51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6DDCBC23C1F5E7001FE51D /* libScreenshotServicesServiceDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libScreenshotServicesServiceDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6DDCC123C1F5E7001FE51D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EB6DDCC323C1F5E7001FE51D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB6DDCC523C1F5E7001FE51D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB6DDCC923C1F5E7001FE51D /* ScreenshotServicesServiceDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScreenshotServicesServiceDylib.xm; sourceTree = "<group>"; };
+		EB6DDCCA23C1F5E7001FE51D /* ScreenshotServicesServiceDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ScreenshotServicesServiceDylib.mm; sourceTree = "<group>"; };
+		EB6DDCCD23C1F5E7001FE51D /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		EB6DDCCF23C1F5E7001FE51D /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		EB6DDCD123C1F5E7001FE51D /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		EB6DDCD323C1F5E7001FE51D /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		EB6DDCD523C1F5E7001FE51D /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		EB6DDCD723C1F5E7001FE51D /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		EB6DDCDA23C1F5E7001FE51D /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		EB6DDCDC23C1F5E7001FE51D /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		EB6DDCDE23C1F5E7001FE51D /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		EB6DDCE023C1F5E7001FE51D /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		EB6DDCE223C1F5E7001FE51D /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		EB6DDCE423C1F5E7001FE51D /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		EB6DDCE623C1F5E7001FE51D /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		EB6DDCE823C1F5E7001FE51D /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		EB6DDCEA23C1F5E7001FE51D /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		EB6DDCEC23C1F5E7001FE51D /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		EB6DDCEE23C1F5E7001FE51D /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		EB6DDCF023C1F5E7001FE51D /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		EB6DDCF223C1F5E7001FE51D /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		EB6DDCF423C1F5E7001FE51D /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		EB6DDCF723C1F5E7001FE51D /* ScreenshotServicesServiceDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ScreenshotServicesServiceDylib-Prefix.pch"; path = "../ScreenshotServicesServiceDylib-Prefix.pch"; sourceTree = "<group>"; };
+		EB6DDCF923C1F5E7001FE51D /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		EB6DDCFC23C1F5E7001FE51D /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		EB6DDCFE23C1F5E7001FE51D /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		EB6DDD0023C1F5E7001FE51D /* ScreenshotServicesServiceDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotServicesServiceDylib.h; sourceTree = "<group>"; };
+		EB6DDD0223C1F5E7001FE51D /* ScreenshotServicesServiceDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenshotServicesServiceDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB6DDCA523C1F5E7001FE51D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6DDCB923C1F5E7001FE51D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6DDCC223C1F5E7001FE51D /* JavaScriptCore.framework in Frameworks */,
+				EB6DDCC623C1F5E7001FE51D /* UIKit.framework in Frameworks */,
+				EB6DDCC423C1F5E7001FE51D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB6DDC9F23C1F5E7001FE51D = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCAD23C1F5E7001FE51D /* ScreenshotServicesService */,
+				EB6DDCC723C1F5E7001FE51D /* ScreenshotServicesServiceDylib */,
+				EB6DDCC023C1F5E7001FE51D /* Frameworks */,
+				EB6DDCAC23C1F5E7001FE51D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB6DDCAC23C1F5E7001FE51D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCAB23C1F5E7001FE51D /* ScreenshotServicesService.app */,
+				EB6DDCBC23C1F5E7001FE51D /* libScreenshotServicesServiceDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB6DDCAD23C1F5E7001FE51D /* ScreenshotServicesService */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCAE23C1F5E7001FE51D /* icon.png */,
+				EB6DDCB623C1F5E7001FE51D /* Info.plist */,
+				EB6DDCAF23C1F5E7001FE51D /* Scripts */,
+				EB6DDCB123C1F5E7001FE51D /* Config */,
+				EB6DDCB423C1F5E7001FE51D /* TargetApp */,
+			);
+			path = ScreenshotServicesService;
+			sourceTree = "<group>";
+		};
+		EB6DDCAF23C1F5E7001FE51D /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCB023C1F5E7001FE51D /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		EB6DDCB123C1F5E7001FE51D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCB223C1F5E7001FE51D /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EB6DDCB423C1F5E7001FE51D /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCB523C1F5E7001FE51D /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		EB6DDCC023C1F5E7001FE51D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCC123C1F5E7001FE51D /* JavaScriptCore.framework */,
+				EB6DDCC323C1F5E7001FE51D /* Foundation.framework */,
+				EB6DDCC523C1F5E7001FE51D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB6DDCC723C1F5E7001FE51D /* ScreenshotServicesServiceDylib */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDD0023C1F5E7001FE51D /* ScreenshotServicesServiceDylib.h */,
+				EB6DDD0223C1F5E7001FE51D /* ScreenshotServicesServiceDylib.m */,
+				EB6DDCC823C1F5E7001FE51D /* Logos */,
+				EB6DDCCC23C1F5E7001FE51D /* Config */,
+				EB6DDCD923C1F5E7001FE51D /* Trace */,
+				EB6DDCF123C1F5E7001FE51D /* Tools */,
+				EB6DDCF823C1F5E7001FE51D /* AntiAntiDebug */,
+				EB6DDCFB23C1F5E7001FE51D /* fishhook */,
+				EB6DDCF623C1F5E7001FE51D /* Supporting Files */,
+			);
+			path = ScreenshotServicesServiceDylib;
+			sourceTree = "<group>";
+		};
+		EB6DDCC823C1F5E7001FE51D /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCC923C1F5E7001FE51D /* ScreenshotServicesServiceDylib.xm */,
+				EB6DDCCA23C1F5E7001FE51D /* ScreenshotServicesServiceDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		EB6DDCCC23C1F5E7001FE51D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCCD23C1F5E7001FE51D /* MDConfigManager.h */,
+				EB6DDCCF23C1F5E7001FE51D /* MDConfigManager.m */,
+				EB6DDCD123C1F5E7001FE51D /* MDCycriptManager.h */,
+				EB6DDCD323C1F5E7001FE51D /* MDCycriptManager.m */,
+				EB6DDCD523C1F5E7001FE51D /* MDMethodTrace.h */,
+				EB6DDCD723C1F5E7001FE51D /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EB6DDCD923C1F5E7001FE51D /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCDA23C1F5E7001FE51D /* a1a2-selectortramps-arm.s */,
+				EB6DDCDC23C1F5E7001FE51D /* a1a2-selectortramps-arm64.s */,
+				EB6DDCDE23C1F5E7001FE51D /* a1a2-selectortramps-i386.s */,
+				EB6DDCE023C1F5E7001FE51D /* a1a2-selectortramps-x86_64.s */,
+				EB6DDCE223C1F5E7001FE51D /* a2a3-selectortramps-arm.s */,
+				EB6DDCE423C1F5E7001FE51D /* a2a3-selectortramps-i386.s */,
+				EB6DDCE623C1F5E7001FE51D /* a2a3-selectortramps-x86_64.s */,
+				EB6DDCE823C1F5E7001FE51D /* OCMethodTrace.h */,
+				EB6DDCEA23C1F5E7001FE51D /* OCMethodTrace.m */,
+				EB6DDCEC23C1F5E7001FE51D /* OCSelectorTrampolines.h */,
+				EB6DDCEE23C1F5E7001FE51D /* OCSelectorTrampolines.mm */,
+				EB6DDCF023C1F5E7001FE51D /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		EB6DDCF123C1F5E7001FE51D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCF223C1F5E7001FE51D /* LLDBTools.h */,
+				EB6DDCF423C1F5E7001FE51D /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		EB6DDCF623C1F5E7001FE51D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCF723C1F5E7001FE51D /* ScreenshotServicesServiceDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB6DDCF823C1F5E7001FE51D /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCF923C1F5E7001FE51D /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		EB6DDCFB23C1F5E7001FE51D /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDCFC23C1F5E7001FE51D /* fishhook.c */,
+				EB6DDCFE23C1F5E7001FE51D /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB6DDCBA23C1F5E7001FE51D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6DDCD223C1F5E7001FE51D /* MDCycriptManager.h in Headers */,
+				EB6DDCD623C1F5E7001FE51D /* MDMethodTrace.h in Headers */,
+				EB6DDD0123C1F5E7001FE51D /* ScreenshotServicesServiceDylib.h in Headers */,
+				EB6DDCFF23C1F5E7001FE51D /* fishhook.h in Headers */,
+				EB6DDCF323C1F5E7001FE51D /* LLDBTools.h in Headers */,
+				EB6DDCCE23C1F5E7001FE51D /* MDConfigManager.h in Headers */,
+				EB6DDCED23C1F5E7001FE51D /* OCSelectorTrampolines.h in Headers */,
+				EB6DDCE923C1F5E7001FE51D /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB6DDCAA23C1F5E7001FE51D /* ScreenshotServicesService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6DDD0923C1F5E7001FE51D /* Build configuration list for PBXNativeTarget "ScreenshotServicesService" */;
+			buildPhases = (
+				EB6DDCA423C1F5E7001FE51D /* Sources */,
+				EB6DDCA523C1F5E7001FE51D /* Frameworks */,
+				EB6DDCA623C1F5E7001FE51D /* ShellScript */,
+				EB6DDCA723C1F5E7001FE51D /* Resources */,
+				EB6DDCA823C1F5E7001FE51D /* CopyFiles */,
+				EB6DDCA923C1F5E7001FE51D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB6DDCBF23C1F5E7001FE51D /* PBXTargetDependency */,
+			);
+			name = ScreenshotServicesService;
+			productName = ScreenshotServicesService;
+			productReference = EB6DDCAB23C1F5E7001FE51D /* ScreenshotServicesService.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB6DDCBB23C1F5E7001FE51D /* ScreenshotServicesServiceDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6DDD0623C1F5E7001FE51D /* Build configuration list for PBXNativeTarget "ScreenshotServicesServiceDylib" */;
+			buildPhases = (
+				EB6DDCB723C1F5E7001FE51D /* ShellScript */,
+				EB6DDCB823C1F5E7001FE51D /* Sources */,
+				EB6DDCB923C1F5E7001FE51D /* Frameworks */,
+				EB6DDCBA23C1F5E7001FE51D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenshotServicesServiceDylib;
+			productName = ScreenshotServicesServiceDylib;
+			productReference = EB6DDCBC23C1F5E7001FE51D /* libScreenshotServicesServiceDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB6DDCA023C1F5E7001FE51D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "乐 y";
+				TargetAttributes = {
+					EB6DDCAA23C1F5E7001FE51D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					EB6DDCBB23C1F5E7001FE51D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = EB6DDCA323C1F5E7001FE51D /* Build configuration list for PBXProject "ScreenshotServicesService" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB6DDC9F23C1F5E7001FE51D;
+			productRefGroup = EB6DDCAC23C1F5E7001FE51D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB6DDCAA23C1F5E7001FE51D /* ScreenshotServicesService */,
+				EB6DDCBB23C1F5E7001FE51D /* ScreenshotServicesServiceDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB6DDCA723C1F5E7001FE51D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6DDCB323C1F5E7001FE51D /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB6DDCA623C1F5E7001FE51D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		EB6DDCA923C1F5E7001FE51D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		EB6DDCB723C1F5E7001FE51D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB6DDCA423C1F5E7001FE51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6DDCB823C1F5E7001FE51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6DDCD423C1F5E7001FE51D /* MDCycriptManager.m in Sources */,
+				EB6DDCDD23C1F5E7001FE51D /* a1a2-selectortramps-arm64.s in Sources */,
+				EB6DDCDB23C1F5E7001FE51D /* a1a2-selectortramps-arm.s in Sources */,
+				EB6DDCE123C1F5E7001FE51D /* a1a2-selectortramps-x86_64.s in Sources */,
+				EB6DDCEB23C1F5E7001FE51D /* OCMethodTrace.m in Sources */,
+				EB6DDCD023C1F5E7001FE51D /* MDConfigManager.m in Sources */,
+				EB6DDCFD23C1F5E7001FE51D /* fishhook.c in Sources */,
+				EB6DDCFA23C1F5E7001FE51D /* AntiAntiDebug.m in Sources */,
+				EB6DDD0323C1F5E7001FE51D /* ScreenshotServicesServiceDylib.m in Sources */,
+				EB6DDCEF23C1F5E7001FE51D /* OCSelectorTrampolines.mm in Sources */,
+				EB6DDCDF23C1F5E7001FE51D /* a1a2-selectortramps-i386.s in Sources */,
+				EB6DDCE523C1F5E7001FE51D /* a2a3-selectortramps-i386.s in Sources */,
+				EB6DDCE323C1F5E7001FE51D /* a2a3-selectortramps-arm.s in Sources */,
+				EB6DDCCB23C1F5E7001FE51D /* ScreenshotServicesServiceDylib.mm in Sources */,
+				EB6DDCF523C1F5E7001FE51D /* LLDBTools.mm in Sources */,
+				EB6DDCE723C1F5E7001FE51D /* a2a3-selectortramps-x86_64.s in Sources */,
+				EB6DDCD823C1F5E7001FE51D /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB6DDCBF23C1F5E7001FE51D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB6DDCBB23C1F5E7001FE51D /* ScreenshotServicesServiceDylib */;
+			targetProxy = EB6DDCBE23C1F5E7001FE51D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EB6DDD0423C1F5E7001FE51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB6DDD0523C1F5E7001FE51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB6DDD0723C1F5E7001FE51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6A4C3VV9ST;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScreenshotServicesServiceDylib/ScreenshotServicesServiceDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libScreenshotServicesServiceDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ScreenshotServicesServiceDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		EB6DDD0823C1F5E7001FE51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 6A4C3VV9ST;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScreenshotServicesServiceDylib/ScreenshotServicesServiceDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libScreenshotServicesServiceDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ScreenshotServicesServiceDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB6DDD0A23C1F5E7001FE51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6A4C3VV9ST;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ScreenshotServicesService/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.repaly.jietu.dx.ScreenshotServicesService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB6DDD0B23C1F5E7001FE51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6A4C3VV9ST;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ScreenshotServicesService/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.repaly.jietu.dx.ScreenshotServicesService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB6DDCA323C1F5E7001FE51D /* Build configuration list for PBXProject "ScreenshotServicesService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6DDD0423C1F5E7001FE51D /* Debug */,
+				EB6DDD0523C1F5E7001FE51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6DDD0623C1F5E7001FE51D /* Build configuration list for PBXNativeTarget "ScreenshotServicesServiceDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6DDD0723C1F5E7001FE51D /* Debug */,
+				EB6DDD0823C1F5E7001FE51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6DDD0923C1F5E7001FE51D /* Build configuration list for PBXNativeTarget "ScreenshotServicesService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6DDD0A23C1F5E7001FE51D /* Debug */,
+				EB6DDD0B23C1F5E7001FE51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB6DDCA023C1F5E7001FE51D /* Project object */;
+}
